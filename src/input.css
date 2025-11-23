@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS variables to use in custom CSS if needed */
+:root{
+  --platinum:  #e7ecef;
+  --dusk-blue: #274c77;
+  --steel-blue:#6096ba;
+  --icy-blue:   #a3cef1;
+  --grey-olive: #8b8c89;
+}
+
+/* small accessibility polish */
+:focus {
+  outline: 3px solid var(--dusk-blue);
+  outline-offset: 2px;
+}
