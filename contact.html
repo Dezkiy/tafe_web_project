@@ -1,3 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Home — My Site</title>
+  <link rel="stylesheet" href="Assets/css/site.css">
+  <script src="Assets/js/form.js" defer></script>
+</head>
+<body class="bg-platinum text-dusk-blue">
+  <header class="py-4 bg-platinum border-b border-steel-blue">
+    <nav class="max-w-3xl mx-auto px-4 flex items-center justify-between">
+      <a href="index.html" class="font-bold text-lg text-dusk-blue">MySite</a>
+      <ul class="flex gap-4">
+        <li><a href="index.html" class="underline text-dusk-blue">Home</a></li>
+        <li><a href="about.html" class="text-dusk-blue">About</a></li>
+        <li><a href="resume.html" class="text-dusk-blue">Resumé</a></li>
+        <li><a href="projects.html" class="text-dusk-blue">Projects</a></li>
+        <li><a href="contact.html" class="text-dusk-blue">Contact</a></li>
+        <li><a href="mywork.html" class="text-dusk-blue">My Work</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="max-w-3xl mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold mb-6 text-dusk-blue">Contact Us</h1>
+
+    <form id="contactForm" class="space-y-6 bg-platinum p-6 rounded-lg border border-steel-blue shadow-md">
+      
+      <div>
+        <label for="name" class="block text-dusk-blue font-semibold mb-1">Name</label>
+        <input type="text" id="name" class="w-full border border-steel-blue rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-icy-blue" />
+        <div class="text-red-600 text-sm mt-1" id="nameError"></div>
+      </div>
+
+      <div>
+        <label for="email" class="block text-dusk-blue font-semibold mb-1">Email</label>
+        <input type="text" id="email" class="w-full border border-steel-blue rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-icy-blue" />
+        <div class="text-red-600 text-sm mt-1" id="emailError"></div>
+      </div>
+
+      <div>
+        <label for="message" class="block text-dusk-blue font-semibold mb-1">Message</label>
+        <textarea id="message" rows="4" class="w-full border border-steel-blue rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-icy-blue"></textarea>
+        <div class="text-red-600 text-sm mt-1" id="messageError"></div>
+      </div>
+
+      <button type="submit" class="bg-dusk-blue text-platinum px-6 py-2 rounded hover:bg-steel-blue transition-colors">Send</button>
+    </form>
+  </main>
+</body>
 </html>
