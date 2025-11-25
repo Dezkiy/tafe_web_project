@@ -1,3 +1,76 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Home — My Site</title>
+  <link rel="stylesheet" href="Assets/css/site.css">
+</head>
+<body class="bg-platinum text-dusk-blue">
+  <header class="py-4 bg-platinum border-b border-steel-blue">
+    <nav class="max-w-3xl mx-auto px-4 flex items-center justify-between">
+      <a href="index.html" class="font-bold text-lg text-dusk-blue">MySite</a>
+      <ul class="flex gap-4">
+        <li><a href="index.html" class="underline text-dusk-blue">Home</a></li>
+        <li><a href="about.html" class="text-dusk-blue">About</a></li>
+        <li><a href="resume.html" class="text-dusk-blue">Resumé</a></li>
+        <li><a href="projects.html" class="text-dusk-blue">Projects</a></li>
+        <li><a href="contact.html" class="text-dusk-blue">Contact</a></li>
+        <li><a href="mywork.html" class="text-dusk-blue">My Work</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="max-w-3xl mx-auto px-4 py-12">
+    <section>
+      <h1 class="text-3xl font-bold text-dusk-blue mb-6">Projects</h1>
+    </section>
+
+    <!-- PROJECT: WareLog -->
+    <article class="mb-12">
+      <h2 class="text-2xl font-semibold text-dusk-blue mb-3">WareLog</h2>
+
+      <p class="text-grey-olive leading-relaxed mb-4">
+      WareLog is a cross-platform warehouse tracking system built with a
+      <strong>.NET MAUI</strong> mobile client and a <strong>Python FastAPI</strong> backend.
+      The mobile app collects detailed information about incoming goods — including
+      customer details, receiver and driver information, item descriptions, photos,
+      and signatures — and sends it securely through RESTful API calls.
+      </p>
+
+      <p class="text-grey-olive leading-relaxed mb-4">
+      The backend, built with FastAPI, validates and processes the data before storing
+      it in a centralized <strong>PostgreSQL</strong> database. This setup allows for fast,
+      reliable, and scalable warehouse operations, while remaining easy to extend
+      for future business requirements.
+      </p>
+
+      <!-- Screenshots section -->
+      <div class="mt-8">
+        <h3 class="text-xl font-semibold text-dusk-blue mb-3">Screenshots</h3>
+        <p class="text-grey-olive mb-4">
+          Below are two example screenshots from the mobile app.
+        </p>
+  
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <!-- Screenshot 1 -->
+          <figure class="w-full">
+            <img src="Assets/img/warelog_1.jpg"
+                alt="WareLog app screenshot 1"
+                class="w-full h-auto rounded-xl border border-steel-blue shadow-md" />
+            <figcaption class="text-sm text-grey-olive mt-2">screenshots 1</figcaption>
+          </figure>
+
+          <!-- Screenshot 2 -->
+          <figure class="w-full">
+            <img src="Assets/img/warelog_2.jpg"
+                alt="WareLog app screenshot 2"
+                class="w-full h-auto rounded-xl border border-steel-blue shadow-md" />
+            <figcaption class="text-sm text-grey-olive mt-2">screenshots 2</figcaption>
+          </figure>
+        </div>
+      </div>
+    </article>
+  </main>
+</body>
 </html>
