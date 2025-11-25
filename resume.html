@@ -1,3 +1,145 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Home — My Site</title>
+  <link rel="stylesheet" href="Assets/css/site.css">
+</head>
+<body class="bg-platinum text-dusk-blue">
+  <header class="py-4 bg-platinum border-b border-steel-blue">
+    <nav class="max-w-3xl mx-auto px-4 flex items-center justify-between">
+      <a href="index.html" class="font-bold text-lg text-dusk-blue">MySite</a>
+      <ul class="flex gap-4">
+        <li><a href="index.html" class="underline text-dusk-blue">Home</a></li>
+        <li><a href="about.html" class="text-dusk-blue">About</a></li>
+        <li><a href="resume.html" class="text-dusk-blue">Resumé</a></li>
+        <li><a href="projects.html" class="text-dusk-blue">Projects</a></li>
+        <li><a href="contact.html" class="text-dusk-blue">Contact</a></li>
+        <li><a href="mywork.html" class="text-dusk-blue">My Work</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<main class="max-w-3xl mx-auto px-4 py-12">
+  <section>
+    <h1 class="text-3xl font-bold text-dusk-blue mb-6">Resumé</h1>
+  </section>
+
+  <!-- SUMMARY -->
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold text-dusk-blue mb-3">Summary</h2>
+    <p class="text-grey-olive leading-relaxed">
+      I have a diverse background in Information Technologies, with experience ranging
+      from maintaining IT infrastructure to designing communication systems. My most
+      recent role as a DevOps Engineer at 2GIS demonstrates my expertise in building
+      and supporting continuous integration processes. I work confidently with Jenkins,
+      Terraform, Docker, Kubernetes, Python, and network administration. I am strong
+      in troubleshooting complex technical issues, learning new technologies quickly,
+      and collaborating effectively with teams.
+    </p>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold text-dusk-blue mb-3">Skills</h2>
+    <ul class="list-disc pl-6 text-grey-olive space-y-2">
+      <li><strong>DevOps:</strong> CI/CD, Jenkins, Ansible, Docker, Terraform, Artifactory</li>
+      <li><strong>Containerization & Orchestration:</strong> Kubernetes, Docker Swarm</li>
+      <li><strong>Monitoring & Logging:</strong> Prometheus, Grafana, Elasticsearch, Kibana, Zabbix</li>
+      <li><strong>Version Control:</strong> Git (Bitbucket, GitLab, GitHub)</li>
+      <li><strong>Amazon Web Services:</strong> EC2, Lambda, S3, Step Functions, DMS, CloudFormation</li>
+      <li><strong>Programming Languages:</strong> Python, Groovy, SQL, C#, Bash, HCL</li>
+      <li><strong>Network Administration:</strong> Routing, TCP/IP, OSPF, STP, VPN, SD-WAN</li>
+    </ul>
+  </section>
+
+  <!-- CAREER HISTORY -->
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold text-dusk-blue mb-4">Career History</h2>
+
+    <!-- DevOps Engineer -->
+    <article class="mb-8">
+      <h3 class="text-xl font-semibold text-dusk-blue">DevOps Engineer — 2GIS</h3>
+      <p class="text-sm text-grey-olive mb-2">May 2021 – Sep 2023</p>
+      <p class="text-grey-olive leading-relaxed mb-2">
+        Supported and developed CI pipelines using Jenkins, Docker, ELK, Ansible and custom Groovy libraries.
+        Worked closely with teams to troubleshoot CI issues and improve performance.
+      </p>
+      <ul class="list-disc pl-6 text-grey-olive space-y-1">
+        <li>Created library to check pull-request merge feasibility</li>
+        <li>Developed GitLab & Bitbucket API integration library for Slack notifications</li>
+        <li>Built Jira messaging automation library</li>
+        <li>Optimized Jenkins by removing legacy plugins</li>
+        <li>Deployed and integrated Artifactory into CI pipelines</li>
+        <li>Improved testing pipelines, increasing speed and reducing hardware load</li>
+      </ul>
+    </article>
+
+    <!-- Network Engineer Gazprom -->
+    <article class="mb-8">
+      <h3 class="text-xl font-semibold text-dusk-blue">Network Engineer — Gazprom transgaz Tomsk</h3>
+      <p class="text-sm text-grey-olive mb-2">Apr 2017 – May 2021</p>
+      <p class="text-grey-olive leading-relaxed">
+        Deployed and administered network equipment (Cisco, Huawei, Eltex, HP).  
+        Implemented Zabbix monitoring and introduced Ansible automation for up to 1500 devices.
+      </p>
+    </article>
+
+    <!-- Design Engineer Elcomplus -->
+    <article class="mb-8">
+      <h3 class="text-xl font-semibold text-dusk-blue">Design Engineer — Elcomplus LLC</h3>
+      <p class="text-sm text-grey-olive mb-2">Feb 2014 – Apr 2017</p>
+      <p class="text-grey-olive leading-relaxed">
+        Designed communication system solutions, ensuring reliability, security and performance.
+      </p>
+    </article>
+
+    <!-- Network Engineer ER-Telecom -->
+    <article class="mb-8">
+      <h3 class="text-xl font-semibold text-dusk-blue">Network Engineer — ER-Telecom Holding</h3>
+      <p class="text-sm text-grey-olive mb-2">Mar 2012 – Feb 2014</p>
+      <p class="text-grey-olive leading-relaxed">
+        Maintained city-level telecommunications networks using Cisco, Juniper, ZTE, MOXA and D-link devices.
+      </p>
+    </article>
+
+    <!-- System Administrator -->
+    <article>
+      <h3 class="text-xl font-semibold text-dusk-blue">System Administrator — TV & Radio Broadcasting Company "Tomsk"</h3>
+      <p class="text-sm text-grey-olive mb-2">Sep 2010 – Mar 2012</p>
+      <p class="text-grey-olive leading-relaxed">
+        Maintained IT infrastructure, ensured system security and reliability across Linux and Windows environments.
+      </p>
+    </article>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold text-dusk-blue mb-3">Education</h2>
+    <p class="text-grey-olive leading-relaxed">
+      <strong>Tomsk State University of Control Systems and Radioelectronics</strong><br>
+      Engineer (Diploma Specialist), Radio Engineering<br>
+      Sep 2005 – Aug 2010
+    </p>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section>
+    <h2 class="text-2xl font-semibold text-dusk-blue mb-4">Licenses & Certifications</h2>
+
+    <ul class="list-disc pl-6 text-grey-olive space-y-2">
+      <li><strong>CKA — Certified Kubernetes Administrator</strong> (Valid to 2026)</li>
+      <li><strong>AWS Solutions Architect — Associate</strong> (Valid to 2027)</li>
+      <li><strong>AWS Cloud Practitioner</strong> (Valid to 2027)</li>
+      <li><strong>Terraform Associate (HCTAO-003)</strong></li>
+      <li><strong>Python Network Programming</strong> — Udemy</li>
+      <li><strong>Python 3 Tutorial</strong> — SoloLearn</li>
+      <li><strong>HCNA-R&S</strong> — Huawei (Expired)</li>
+      <li><strong>ICND2</strong> — Cisco</li>
+      <li><strong>Game Theory</strong> — Coursera</li>
+    </ul>
+  </section>
+</main>
+</body>
 </html>
