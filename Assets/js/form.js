@@ -13,8 +13,13 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     let isValid = true;
 
     // Validate Name
+    let nameRegex = /^[A-Za-z\s]{2,}$/;
     if (name === '') {
         document.getElementById('nameError').textContent = 'Name is required';
+        isValid = false;
+    } else if (!nameRegex.test(name)) {
+        document.getElementById('nameError').textContent =
+            'Name should contain only letters and be at least 2 characters';
         isValid = false;
     }
 
@@ -29,8 +34,13 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     }
 
     // Validate Message
+    let messageRegex = /^[A-Za-z0-9\s.,!?'"()-]{10,}$/;
     if (message === '') {
         document.getElementById('messageError').textContent = 'Message cannot be empty';
+        isValid = false;
+    } else if (!messageRegex.test(message)) {
+        document.getElementById('messageError').textContent =
+            'Message should be at least 10 characters';
         isValid = false;
     }
 
