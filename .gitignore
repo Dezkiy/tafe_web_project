@@ -6,3 +6,6 @@ node_modules/
 
 # Tailwind
 package*.json 
+
+# ESlint
+eslint.config*

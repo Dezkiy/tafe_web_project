@@ -99,6 +99,7 @@ form.addEventListener('submit', async (ev) => {
 
         const text = await res.text();
         let data = null;
+        // eslint-disable-next-line no-unused-vars
         try { data = JSON.parse(text); } catch (e) { /* not JSON */ }
 
         // HTTP-level errors
